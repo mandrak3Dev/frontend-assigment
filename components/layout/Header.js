@@ -4,6 +4,7 @@ import SearchBar from "../ui/SearchBar";
 import MainNav from "./MainNav";
 import UsersNav from "./UsersNav";
 import Logo from "../ui/Logo";
+import useHandleChange from '../../hooks/useHandleChange';
 
 const Navbar = styled.header`
   display: flex;
@@ -15,17 +16,19 @@ const Navbar = styled.header`
 
 const PublicNav = styled.components`
   display: flex;
-  flex: 0 1 50%;
+  flex: 0 1 60%;
   justify-content: space-between;
   align-items: center;
 `;
 
 const Header = () => {
+  const {value, setValue, handleChange} = useHandleChange('');
+
   return (
     <Navbar>
       <PublicNav>
         <Logo />
-        <SearchBar />
+        <SearchBar value={value} setValue={setValue} handleChange={handleChange}/>
         <MainNav />
       </PublicNav>
       <UsersNav />

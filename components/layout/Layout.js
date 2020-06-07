@@ -35,6 +35,9 @@ const Layout = (props) => {
             margin: 0 0 2rem 0;
             line-height: 1.5;
           }
+          p{
+            line-height: 1;
+          }
           ul {
             list-style: none;
             margin: 0;

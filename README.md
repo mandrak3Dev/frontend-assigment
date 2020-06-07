@@ -34,3 +34,10 @@ Puntos extras:
 - Unit testing.
 - Linting y Prettier
 - Docker
+
+Instrucciones para correr la prueba:
+----
+- Clonar este repo.
+- npm i.
+- npm run dev e ir a http://localhost:3000 // o también se puede ver en "producción" en https://sad-brahmagupta-5f33b4.netlify.app/
+- Seguir el enlace de "ir a noticia 1" (simulación de routing).

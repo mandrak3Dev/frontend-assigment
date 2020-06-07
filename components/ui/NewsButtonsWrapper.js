@@ -28,15 +28,15 @@ const NewsButtonWrapper = () => {
   return (
     <ButtonsWrapper>
       <button>
-        <i class="far fa-star"></i>
+        <i className="far fa-star"></i>
         <span>Destacar</span>
       </button>
       <button>
-        <i class="far fa-comment-alt"></i>
+        <i className="far fa-comment-alt"></i>
         <span>Comentar</span>
       </button>
       <button>
-        <i class="fas fa-share"></i>
+        <i className="fas fa-share"></i>
         <span>Compartir</span>
       </button>
     </ButtonsWrapper>

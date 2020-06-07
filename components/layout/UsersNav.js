@@ -7,7 +7,6 @@ const NavItem = styled.div`
   align-items: center;
   color: white;
   flex-wrap: nowrap;
-  margin: 0 1.5rem;
   position: relative;
   padding-left: 2rem;
   & > * {
@@ -22,6 +21,9 @@ const NavItem = styled.div`
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);
   }
+  & i:last-child:hover {
+    cursor: pointer;
+  }
 `;
 
 const Notifications = styled.div`
@@ -33,8 +35,11 @@ const Notifications = styled.div`
     background-color: var(--green);
     color: white;
     font-size: 1rem;
-    padding: 0.1rem .6rem;
+    padding: 0.1rem 0.6rem;
     font-weight: bold;
+  }
+  & :hover {
+    cursor: pointer;
   }
 `;
 
@@ -50,20 +55,23 @@ const Avatar = styled.div`
   & i {
     font-size: 1.6rem;
   }
+  & :hover {
+    cursor: pointer;
+  }
 `;
 
 const UsersNav = () => {
   return (
     <NavItem>
       <Notifications>
-        <i class="far fa-bell"></i>
+        <i className="far fa-bell"></i>
         <span>1</span>
       </Notifications>
       <Avatar>
         <img src="/static/img/avatar.JPG" alt="Imágen de perfil" />
-        <i class="fas fa-chevron-down"></i>
+        <i className="fas fa-chevron-down"></i>
       </Avatar>
-      <i class="fas fa-cog"></i>
+      <i className="fas fa-cog"></i>
     </NavItem>
   );
 };

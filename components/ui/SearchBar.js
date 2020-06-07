@@ -5,12 +5,12 @@ const SearchBar = ({ value, setValue, handleChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Buscando: ${value}`);
-    setValue('');
+    setValue("");
   };
   return (
     <div
       css={css`
-        margin: 0 1.5rem;
+        margin: 0 4.5rem;
       `}
     >
       <form id="search" onSubmit={handleSubmit}>
@@ -26,10 +26,10 @@ const SearchBar = ({ value, setValue, handleChange }) => {
               margin-right: 0.3rem;
               border-radius: 1.6rem 0 0 0;
               color: var(--green);
-              font-size: 2.5rem;
+              font-size: 1.8rem;
             `}
           >
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </div>
           <input
             type="text"
@@ -37,10 +37,11 @@ const SearchBar = ({ value, setValue, handleChange }) => {
             onChange={handleChange}
             value={value}
             css={css`
+              font-size: 1.4rem;
               border-radius: 0 0 1.6rem 0;
               border: none;
               padding-left: 1rem;
-              width: 350px;
+              width: 300px;
             `}
           />
         </div>

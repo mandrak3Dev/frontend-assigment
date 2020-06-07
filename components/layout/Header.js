@@ -11,10 +11,10 @@ const Navbar = styled.header`
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-blue);
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 4rem;
 `;
 
-const PublicNav = styled.components`
+const PublicNav = styled.div`
   display: flex;
   flex: 0 1 60%;
   justify-content: space-between;

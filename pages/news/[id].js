@@ -4,8 +4,6 @@ import NewsProvider from "../../context/NewsContext";
 import styled from "@emotion/styled";
 import Layout from "../../components/layout/Layout";
 import AsideCard from "../../components/layout/AsideCard";
-import NewsButtonsWrapper from "../../components/ui/NewsButtonsWrapper";
-import Badge from "../../components/ui/Badge";
 import News from '../../components/layout/New';
 
 const Container = styled.div`
@@ -23,14 +21,8 @@ const NewWrapper = styled.div`
   border-radius: 10px;
 `;
 
-const MainPicture = styled.div`
-  background-color: blue;
-  height: 400px;
-  position: relative;
-`;
-
 const AsideWrapper = styled.aside`
-  margin-left: 2rem;
+  margin-left: 3rem;
   & b {
     color: var(--secondary-blue);
   }
@@ -68,12 +60,7 @@ const New = () => {
         <NewsProvider>
           <MainWrapper>
             <NewWrapper>
-              <MainPicture>
-                <Badge props={"Noticia"} />
-              </MainPicture>
-              <h1>Noticia {id}</h1>
               <News />
-              <NewsButtonsWrapper />
             </NewWrapper>
           </MainWrapper>
           <AsideWrapper>

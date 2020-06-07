@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Badges = styled.div`
-  padding: .8rem 2.5rem;
+  padding: .4rem 2rem;
   text-transform: uppercase;
   color: white;
   background-color: var(--secondary-blue);

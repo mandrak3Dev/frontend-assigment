@@ -26,6 +26,7 @@ const Layout = (props) => {
             box-sizing: inherit;
           }
           body {
+            font-family: "Roboto", sans-serif;
             font-size: 1.6rem;
             line-height: 1.5;
           }
@@ -35,7 +36,7 @@ const Layout = (props) => {
             margin: 0 0 2rem 0;
             line-height: 1.5;
           }
-          p{
+          p {
             line-height: 1;
           }
           ul {
@@ -45,9 +46,14 @@ const Layout = (props) => {
           }
           a {
             text-decoration: none;
+            & :hover {
+              cursor: pointer;
+            }
           }
-          img {
-            max-width: 100%;
+          button {
+            & :hover {
+              cursor: pointer;
+            }
           }
         `}
       />
@@ -65,12 +71,16 @@ const Layout = (props) => {
           integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
           crossorigin="anonymous"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header />
       <main
         css={css`
           background-color: var(--gray);
-          padding: 4rem 2rem;
+          padding: 4rem 0 4rem 2rem;
         `}
       >
         {props.children}

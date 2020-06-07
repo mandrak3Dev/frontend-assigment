@@ -5,7 +5,7 @@ import { css } from "@emotion/core";
 
 const NavItem = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   color: white;
@@ -13,8 +13,11 @@ const NavItem = styled.div`
   & span {
     margin: 0 1rem;
   }
-  & i:first-child{
+  & i:first-child {
     font-size: 2.5rem;
+  }
+  & :hover {
+    cursor: pointer;
   }
 `;
 
@@ -22,14 +25,16 @@ const MainNav = () => {
   return (
     <NavItem>
       <Link href="/">
-        <div css={css`
-          display: flex;
-        `}>
-          <i class="fas fa-home"></i>
+        <div
+          css={css`
+            display: flex;
+          `}
+        >
+          <i className="fas fa-home"></i>
           <span>Inicio</span>
         </div>
       </Link>
-      <i class="fas fa-chevron-down"></i>
+      <i className="fas fa-chevron-down"></i>
     </NavItem>
   );
 };
